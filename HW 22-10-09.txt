@@ -1,0 +1,40 @@
+1) из таблицы Employees вывести всех сотрудников с job_id FI_ACCOUNT
+  select
+  first_name,
+  last_name,
+  job_id
+from Employees
+where job_id = 'FI_ACCOUNT';
+
+2) вывести всех сотрудников, которые зарабатывают меньше 12000
+select
+  first_name,
+  last_name,
+  salary
+from Employees
+where salary < 10000;
+
+3) вывести сотрудников из департаментов 70, 80, 100
+select
+  first_name,
+  last_name,
+  department_id
+from Employees
+where department_id in (70, 80, 100);
+
+4) вывести всех сотрудников, у которых имя начинается на D
+
+select
+  first_name,
+  last_name,
+  department_id
+from Employees
+where first_name LIKE 'd%';
+
+5) вывести сотрудников, у которых employee_id от 108 до 143 (включая концы)
+select
+  first_name,
+  last_name,
+  employee_id
+from Employees
+where employee_id between 108 and 143;
